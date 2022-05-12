@@ -1,0 +1,20 @@
+<p>Heroes List</p>
+
+
+<dl *ngIf="erasedHero; else noErasedHero">
+    <td>The erased hero is:</td>
+    <dd>{{erasedHero}}</dd>
+</dl>
+
+<ng-template #noErasedHero>
+    <h3>No ha borrado nada</h3>
+</ng-template>
+
+<button (click)="eraseHero()"> Erase Hero </button>
+
+<ul>
+    <li *ngFor="let hero of heroes; let i = index"> {{i + 1}} {{hero}}</li>
+</ul>
+
+
+
