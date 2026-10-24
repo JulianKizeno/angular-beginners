@@ -3,6 +3,7 @@ import { Caracter } from '../interface/dbz.interface';
 import { DbzService } from '../services/dbz.service';
 
 @Component({
+  standalone: false,
   selector: 'app-caracters',
   templateUrl: './caracters.component.html'
 })

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 
 
 @Component({
+  standalone: false,
     selector: 'app-counter',
     template: `
         <h1>{{title}}</h1>
